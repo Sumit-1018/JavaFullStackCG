@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend><mark>Registration Form</mark></legend>
+    <form action="">
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username" placeholder="Capital letters only" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="phone">Contact No.:</label>
+        <input type="tel" name="phone" id="phone" >
+        <br><br>
+        <label for="gender">Gender</label>
+        <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <br><br>
+        <label for="skillset">Skillset:</label>
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skillset" id="html" value="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skillset" id="css" value="css">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="skillset" id="js" value="js">
+        <label for="react">React</label>
+        <input type="checkbox" name="skillset" id="react" value="react">
+        <br><br>
+        <label for="resume">Resume:</label>
+        <input type="file" name="resume" id="resume">
+        <br><br>
+        <label for="doj">Date of Joining:</label>
+        <input type="date" name="doj" id="doj">
+        <br><br>
+        <label for="branch">Branch:</label>
+        <select name="branch" id="branch">
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="mech">MECH</option>
+            <option value="civil">CIVIL</option>
+        </select>
+        <br><br>
+        <label for="departments">Departments:</label>
+        <select name="departments" id="departments">
+            <optgroup label="Management">
+                <option value="hr">HR</option>
+                <option value="finance">Finance</option>
+            </optgroup>
+            <optgroup label="Technical">
+                <option value="development">Development</option>
+                <option value="testing">Testing</option>
+            </optgroup>
+
+        </select>
+        <br><br>
+        <details open>
+            <summary>Additional Information</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+        </details>
+        <br>
+
+        <label for="experience">Experience:</label>
+        <input type="range" name="experience" id="experience" step="2" min="0" max="10">
+        <br><br>
+
+        <label for="time">Preferred Contact Time:</label>
+        <input type="time" name="time" id="time">
+        <br><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" name="color" id="color">
+        <br><br>    
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="4" cols="50"></textarea>
+        <br><br>
+        <label for="fees">Course Fees:</label>
+        <input type="number" name="fees" id="fees" value="20000" readonly>
+        <br><br>
+        <button type="submit">Submit</button>
+        <input type="submit" value="Login">
+        <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+</body>
+</html>

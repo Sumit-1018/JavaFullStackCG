@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Mania - Order Here</title>
+</head>
+<body bgcolor="#e6e6e6">
+    <table width="100%" bgcolor="yellow" cellpadding="6" cellspacing="0" border="0">
+        <tr>
+            <td align="center">
+                <b>🍕Pizza mania🍕</b>
+            </td>
+        </tr>
+    </table>
+
+    <form>
+        <fieldset>
+            <legend><b>Pizza Order Here</b></legend>
+        <table width="760" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <br>
+                    <br>
+
+                    <table width="600" border="0" cellpadding="8" cellspacing="0">
+                        <tr>
+                            <td width="210"><b>First Name:</b></td>
+                            <td width="390"><input type="text" placeholder="First Name" size="18"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Last Name</b></td>
+                            <td><input type="text" placeholder="Last Name" size="18"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Email:</b></td>
+                            <td><input type="email" placeholder="abc@example.com" size="18"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Contact:</b></td>
+                            <td><input type="tel" placeholder="Ex-8989898989" size="18"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Preferred Delivery Date:</b></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><b>Size:</b></td>
+                            <td>
+                                <label>Small</label>
+                                <input type="radio" name="size" value="small">
+                                <label>Medium</label>
+                                <input type="radio" name="size" value="medium">
+                                <label>Large</label>
+                                <input type="radio" name="size" value="large">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><mark><b><u>Outlet:</u></b></mark></td>
+                            <td>
+                                <select>
+                                    <option>Select Outlet</option>
+                                    <option>Outlet 1</option>
+                                    <option>Outlet 2</option>
+                                    <option>Outlet 3</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <h2><i>Menu</i>↓</h2>
+                    <br>
+
+                    <table width="760" border="0" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <td width="120" valign="middle"><font size="6">🍕</font></td>
+                            <td width="520" valign="middle">
+                                <input type="checkbox">
+                                <b>Hawaiian(INR 150.00 <del>INR 170.00</del>)</b>
+                            </td>
+                            <td width="120" valign="middle">
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle"><font size="6">🍕</font></td>
+                            <td valign="middle">
+                                <input type="checkbox">
+                                <b>Pepperoni(INR 140.00 <del>INR 160.00</del>)</b>
+                            </td>
+                            <td valign="middle">
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle"><font size="6">🍕</font></td>
+                            <td valign="middle">
+                                <input type="checkbox">
+                                <b>Vegetable(INR 130.00 <del>INR 150.00</del>)</b>
+                            </td>
+                            <td valign="middle">
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <br>
+                    <h2><i>Extra Details:</i>↓</h2>
+                    <br>
+
+                    <table width="760" border="0" cellpadding="12" cellspacing="0">
+                        <tr>
+                            <td width="120"><font size="6">💳</font></td>
+                            <td width="150"><b>Credit Card:</b></td>
+                            <td width="490">
+                                <input type="text" placeholder="1234-5670-9123-1111" size="20">
+                                <button type="button">Verify Card</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><font size="6">📍</font></td>
+                            <td><b>Pin:</b></td>
+                            <td><input type="text" placeholder="421604" size="20"></td>
+                        </tr>
+                        <tr>
+                            <td><font size="6">🖼️</font></td>
+                            <td><mark><b><u>Upload photo for discount:</u></b></mark></td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><font size="6">🗒️</font></td>
+                            <td valign="top"><mark><b><u>Additional Note:</u></b></mark></td>
+                            <td>
+                                <textarea rows="4" cols="30" placeholder="If any additional Requirement\nThere Please Mention Here."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><font size="6">⭐</font></td>
+                            <td><mark><b><u>Rating:</u></b></mark></td>
+                            <td><input type="range" min="1" max="5" value="5"></td>
+                        </tr>
+                    </table>
+
+                    <br>
+
+                    <table width="760" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="right">
+                                <button type="submit">Submit Order</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+</body>
+</html>

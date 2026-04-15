@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #5f574f;
+	background: #f3e5d8;
+}
+
+.page-shell {
+	min-height: 100vh;
+	padding: 24px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.recipe-card {
+	width: min(720px, 100%);
+	background: #fff;
+	border-radius: 28px;
+	padding: 24px;
+	box-shadow: 0 12px 30px rgba(104, 61, 24, 0.08);
+}
+
+.hero-image img {
+	display: block;
+	width: 100%;
+	border-radius: 18px;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.content {
+	padding-top: 22px;
+}
+
+.intro h1,
+.section h2,
+.prep-time h2 {
+	margin: 0;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.intro h1 {
+	font-size: clamp(2rem, 4vw, 3rem);
+	line-height: 1;
+	color: #302d2c;
+	margin-bottom: 16px;
+}
+
+.intro p {
+	margin: 0;
+	line-height: 1.6;
+	font-size: 1rem;
+}
+
+.panel,
+.section {
+	margin-top: 24px;
+}
+
+.prep-time {
+	background: #fff7fc;
+	padding: 24px 24px 22px;
+	border-radius: 16px;
+}
+
+.prep-time h2 {
+	color: #7a284e;
+	font-size: 1.2rem;
+	margin-bottom: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.prep-time ul,
+.bullets,
+.steps {
+	margin: 0;
+	padding-left: 22px;
+}
+
+.prep-time li,
+.bullets li,
+.steps li {
+	line-height: 1.65;
+	padding-left: 12px;
+}
+
+.prep-time li + li,
+.bullets li + li,
+.steps li + li {
+	margin-top: 8px;
+}
+
+.section {
+	padding-bottom: 24px;
+	border-bottom: 1px solid #e8dfd5;
+}
+
+.section:last-of-type {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.section h2 {
+	font-size: clamp(1.6rem, 3vw, 2.1rem);
+	color: #854632;
+	margin-bottom: 14px;
+}
+
+.bullets li::marker,
+.steps li::marker {
+	color: #854632;
+	font-weight: 700;
+}
+
+.steps {
+	padding-left: 24px;
+}
+
+.steps strong,
+.prep-time strong {
+	color: #5f574f;
+}
+
+.nutrition p {
+	margin: 0 0 18px;
+	line-height: 1.6;
+}
+
+.nutrition table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.nutrition td {
+	padding: 14px 0;
+	border-bottom: 1px solid #e8dfd5;
+}
+
+.nutrition tr:last-child td {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+.nutrition .value {
+	color: #854632;
+	font-weight: 700;
+}
+
+@media (max-width: 600px) {
+	.recipe-card {
+		padding: 16px;
+		border-radius: 20px;
+	}
+
+	.content {
+		padding-top: 18px;
+	}
+
+	.prep-time,
+	.section {
+		margin-top: 20px;
+	}
+
+	.prep-time {
+		padding: 18px;
+	}
+
+	.prep-time ul,
+	.bullets,
+	.steps {
+		padding-left: 18px;
+	}
+}

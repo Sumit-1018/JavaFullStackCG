@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fetch Products</title>
+	<link rel="stylesheet" href="fetch.css">
+</head>
+<body>
+	<main class="page">
+		<section class="hero">
+			<p class="eyebrow">Fake Store API</p>
+			<h1>Fetch and display products</h1>
+			<p class="lead">Click the button to load product data, including images, from fakestoreapi.com.</p>
+			<button id="fetchBtn" class="fetch-btn" type="button">Fetch Products</button>
+			<p id="status" class="status" aria-live="polite"></p>
+		</section>
+
+		<section>
+			<div id="products" class="products" aria-live="polite"></div>
+		</section>
+	</main>
+
+	<script src="fetch.js"></script>
+</body>
+</html>

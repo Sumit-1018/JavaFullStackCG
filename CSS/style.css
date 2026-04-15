@@ -1,0 +1,203 @@
+/* ----selectors------- */
+/* ---simple selectors--- */
+/* --id, class, tagname, grouping selector, universal selector, combinator selector -- */
+
+/* id selector */
+/* most preference */
+#head2{
+    background-color: orange;
+    color: bisque;
+}
+
+/* class selector */
+/* below id */
+.head{
+    background-color: aquamarine;
+    color: black;
+}
+
+/* tagname selector */
+/* below class */
+h1{
+    background-color: lightblue;
+    color: black;
+}
+
+
+/* grouping selector */
+/* here we can select more than one tag */
+h1, p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* universal selector */
+/* it will select all the tags */
+/* *{
+    background-color: lightyellow;
+    color: red;
+    padding: 10px;
+} */
+
+/* combinator selector */
+
+/* Descendant combinator */
+/* It will target direct as well as indirect children */
+/* div p{
+    background-color: blanchedalmond;
+    color: blueviolet;
+} */
+
+/* Child combinator */
+/* It will target only direct children */
+/* div > p{
+    background-color: lightcoral;
+    color: black;
+} */
+
+/* Adjacent sibling combinator */
+/* It will target only the element that is immediately preceded by the first element */
+/* h2+p{
+     background-color: lightpink;
+    background-color: lightgreen;
+    color: black;
+} */
+
+/* General sibling combinator */
+/* It will target all elements that are siblings of the first element */
+/* h2 ~ p{
+    background-color: lightyellow;
+    color: black;
+} */
+
+
+/* Pseudo-class selectors */
+/* It will target the element based on its state or position */
+/* 
+a:hover{
+    color: violet;
+}
+
+
+a:visited{
+    color: purple;
+}
+
+
+a:link{
+    color: red;
+}
+
+
+a:active{
+    color: green;
+} */
+
+/* Pseudo-element selectors */
+/* These target specific parts of an element */
+p::first-letter{
+    color: red;
+    font-size: 24px;
+}
+p::first-line{
+    color: blue;
+    font-size: 18px;
+}
+
+h2::before{
+    content: "😊";
+    color: orange;
+}
+h2::after{
+    content: "😊";
+    color: orange;
+}
+
+p::selection{
+    background-color: lightgreen;
+    color: black;
+}
+
+
+
+/* :focus   */
+input:focus{
+    color: blue;
+    background-color: black;
+}
+
+/* :checked */
+input:checked{
+    background-color: lightgreen;
+    accent-color: orange;
+}
+
+/* :disabled */
+input:disabled{
+    background-color: lightgray;
+    color: darkgray;
+}
+
+/* ::marker */
+li::marker{
+    content: "👌";
+}
+
+input::placeholder{
+    color: red;
+    font-style: italic;
+}
+
+
+/* Units */
+#div1{
+    /* we can specify units for width and height in pixels (px), percentages (%), or other CSS units */
+    width: 100vw; /* 100% of the viewport width */
+    height: 50vh; /* 50% of the viewport height */
+    background-color: lightblue;
+    border: 4px solid black;
+}
+main{
+    width: 6rem; /* 1rem is equal to the font size of the root element */
+    height: 2rem;
+    margin: 0 auto; /* centers the main element horizontally */
+    background-color: lightgray;
+    border: 4px solid black;
+}
+
+body{
+    font-size: 16px; /* sets the base font size for the document */
+}
+
+*{
+    /* default margin = 8px */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*includes padding and border in the element's total width and height*/
+    
+}
+
+button{
+    padding: 10px 20px; /* adds padding to the button */
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* changes the cursor to a pointer when hovering over the button */
+}
+
+article{
+    width: 300px;
+    height: 200px;
+    background-color: lightyellow;
+    border: 4px solid black;
+    margin: 20px auto; /* centers the article element horizontally and adds vertical margin */
+    padding: 20px; /* adds padding inside the article element */
+}
+
+/* color values:
+    rgb(255, 0, 0)
+    rgva(255, 0, 0, 1)
+    hsl(0, 100%, 50%)
+    hsla(0, 100%, 50%, 1)
+    hash values: #ff0000
+ */

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 28px;
+            font-family: Arial, sans-serif;
+        }
+
+        caption {
+            font-weight: bold;
+            padding: 8px;
+            caption-side: top;
+        }
+
+        th,
+        td {
+            border: 1px solid #666;
+            padding: 10px 12px;
+            text-align: center;
+        }
+
+        thead th {
+            background: #1f3c88;
+            color: #fff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f3f6fb;
+        }
+
+        tbody tr:hover {
+            background: #e8f0fe;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- SEMANTIC TAGS: Provide meaning and structure to content -->
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>This is the header section</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Article section -->
+        <article>
+            <h2>Latest Blog Post</h2>
+            <p>Published on <time datetime="2026-04-02">April 2, 2026</time></p>
+            <p>This is the main article content with important information.</p>
+        </article>
+
+        <!-- Section tag groups related content -->
+        <section>
+            <h2>About Section</h2>
+            <p>This section contains information about the topic.</p>
+        </section>
+
+        <!-- Aside for sidebar or supplementary content -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <address>
+            Contact us at: <a href="mailto:info@example.com">info@example.com</a>
+        </address>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+    <hr>
+
+    <!-- FORMATTING TAGS: Control text appearance -->
+    <h2>Formatting Tags Examples</h2>
+
+    <p>This is a paragraph with <strong>bold text</strong> and <em>italic text</em>.</p>
+    <p><b>Bold text</b> vs <strong>Strong importance</strong></p>
+    <p><i>Italic text</i> vs <em>Emphasized text</em></p>
+    <p><u>Underlined text</u> and <mark>highlighted text</mark></p>
+
+    <!-- Subscript and Superscript -->
+    <p>H<sub>2</sub>O (water)<br>
+    E=mc<sup>2</sup> (Einstein's equation)</p>
+
+    <!-- Deleted and Inserted text -->
+    <p><del>This text is deleted</del> and <ins>this text is inserted</ins></p>
+
+    <!-- Small text -->
+    <p>This is normal text and <small>this is smaller text</small></p>
+
+    <!-- Code examples -->
+    <p>Use <code>console.log()</code> to print to the console.</p>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy</p>
+    
+    <!-- Preformatted text -->
+    <pre>function hello() {
+    console.log("Hello World");
+}</pre>
+
+    <!-- Quotations -->
+    <p>As the saying goes: <q>The early bird catches the worm</q></p>
+    <blockquote>
+        <p>This is a longer quote that stands on its own line. It's used for block-level quotes.</p>
+        <p>- Someone Famous</p>
+    </blockquote>
+
+    <!-- Figure and figcaption -->
+    <figure>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="200">
+        <figcaption>Google's official logo</figcaption>
+    </figure>
+
+    <!-- Links with different targets -->
+    <p><a href="https://www.google.com">Normal link</a><br>
+    <a href="https://www.google.com" target="_blank">Open in new tab</a></p>
+
+    <!-- Anchor tag that downloads an image -->
+    <p>
+        <a href="data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='180' viewBox='0 0 300 180'%3E%3Crect width='300' height='180' fill='%23f4b400'/%3E%3Ccircle cx='150' cy='90' r='42' fill='%2334a853'/%3E%3Ctext x='150' y='97' text-anchor='middle' font-family='Arial' font-size='20' fill='white'%3EImage%3C/text%3E%3C/svg%3E" download="sample-image.svg">
+            Click here to download an image
+        </a>
+        <br>
+        <a href="data:data:image/jpeg;base64,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" download="stock-image.jpg">
+            Download Stock image
+        </a>
+    </p>
+
+
+    <!-- Lists-->
+     <!-- Unordered list -->
+      <h3>Unordered List Example</h3>
+    <ul type="square">
+        <!-- ul types
+         1. Square
+         2. Circle
+         3. Disc
+         4. None
+         -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <!-- Ordered list -->
+     <h3>Ordered List Example</h3>
+    <ol type="A" start="10" reversed>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+    </ol>
+    <!-- Description list -->
+     <h3>Description List Example</h3>
+    <dl>
+        <dt>Term 1</dt>
+        <dd>Description 1</dd>
+        <dt>Term 2</dt>
+        <dd>Description 2</dd>
+    </dl>
+    <!-- Nested list -->
+    <h3>Nested List Example</h3>
+    <ul>
+        <li>Item 1
+            <ul>
+                <li>Subitem 1a</li>
+                <li>Subitem 1b</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Subitem 2a</li>
+                <li>Subitem 2b</li>
+            </ul>
+        </li>
+        </ul>
+
+        <!-- Nested list example -->
+         <h2>Complex Nested List Example</h2>
+         <li>
+            <ol type="I">
+                <li>List Item 1</li>
+                <ol type="a">
+                    <li>Nested Item 1.1</li>
+                    <li>Nested Item 1.2</li>
+                </ol>
+                <li>List Item 2</li>
+                <ol type="1">
+                    <li>Nested Item 2.1</li>
+                    <li>Nested Item 2.2</li>
+                    <ul type="circle">
+                        <li>Nested Item 2.2.1</li>
+                        <li>Nested Item 2.2.2</li>
+                        <ul type="square">
+                            <li>Nested Item 2.2.2.1</li>
+                            <li>Nested Item 2.2.2.2</li>
+                        </ul>
+                        <li>Nested Item 2.2.3</li>
+                    </ul>
+                    <li>Nested Item 2.3</li>
+                </ol>
+                <li>List Item 3</li>
+                <ul type="square">
+                    <li>Nested Item 3.1</li>
+                    <li>Nested Item 3.2</li>
+                    <li>Nested Item 3.3</li>
+                </ul>
+            </ol>
+         </li>
+         </ul>
+    <!--table tag: -->
+    <h2>Table Example</h2>
+    <table border="1">
+        <caption>Sample Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>35</td>
+                <td>Chicago</td>
+            </tr>
+        </tbody>
+        </table>
+    <!--Complex table-->
+    <h2>Complex Table Example</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <caption>Rowspan and Colspan Example</caption>
+        <tr>
+            <th rowspan="2">1</th>
+            <th colspan="2">2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td rowspan="2">5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="2">7</td>
+            <td>8</td>
+        </tr>
+    </table>
+    
+</body>
+
+</html>

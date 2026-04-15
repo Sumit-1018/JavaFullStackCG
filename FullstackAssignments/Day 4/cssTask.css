@@ -1,0 +1,52 @@
+/* tag selector */
+h1 {
+    color: black;
+}
+
+/* grouping selector */
+h1, h2, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* class selectors */
+.page {
+    margin: 20px;
+}
+
+.block {
+    margin-bottom: 24px;
+}
+
+.list {
+    padding-left: 24px;
+}
+
+.sublist {
+    padding-left: 24px;
+}
+
+.accent-warm {
+    color: orange;
+}
+
+.accent-cool {
+    color: aquamarine;
+}
+
+.accent-green {
+    color: green;
+}
+
+.accent-sugar {
+    color: brown;
+}
+
+/* child combinator */
+.list > li {
+    margin-bottom: 4px;
+}
+
+/* descendant combinator */
+.sublist li {
+    color: black;
+}
