@@ -78,3 +78,35 @@ console.log(tuple); // Output: ['Sumit', 'John', 'Alice']
 let tuple2: readonly [string, number] = ["Sumit", 30]; // tuple with string and number
 console.log(tuple2); // Output: ['Sumit', 30]
 // tuple2[0] = "John"; // Error: Cannot assign to '0' because it is a read-only property.
+
+// let tuple3: [string, number] = ["Sumit", 30, 40, "John"]; // Order of types is important, but extra elements are allowed
+
+// !Objects
+let person = {
+    name: "Sumit",
+    age: 30,
+    isStudent: true
+};
+console.log(person); // Output: { name: 'Sumit', age: 30, isStudent: true }
+
+// annotation
+let person2: { name: string; age: number; isStudent: boolean } = {
+    name: "John",
+    age: 25,
+    isStudent: false
+};
+console.log(person2); // Output: { name: 'John', age: 25, isStudent: false }
+
+// !intersection with type alias
+type student={
+    name:string;
+}
+type intern={
+    salary:number;
+}
+type employee=student & intern; // intersection of student and intern
+let newJoinee:employee={
+    name:"Sumit",
+    salary:50000
+}
+console.log(newJoinee); // Output: { name: 'Sumit', salary: 50000 }

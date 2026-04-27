@@ -65,4 +65,24 @@ console.log(tuple); // Output: ['Sumit', 'John', 'Alice']
 let tuple2 = ["Sumit", 30]; // tuple with string and number
 console.log(tuple2); // Output: ['Sumit', 30]
 // tuple2[0] = "John"; // Error: Cannot assign to '0' because it is a read-only property.
+// let tuple3: [string, number] = ["Sumit", 30, 40, "John"]; // Order of types is important, but extra elements are allowed
+// !Objects
+let person = {
+    name: "Sumit",
+    age: 30,
+    isStudent: true
+};
+console.log(person); // Output: { name: 'Sumit', age: 30, isStudent: true }
+// annotation
+let person2 = {
+    name: "John",
+    age: 25,
+    isStudent: false
+};
+console.log(person2); // Output: { name: 'John', age: 25, isStudent: false }
+let newJoinee = {
+    name: "Sumit",
+    salary: 50000
+};
+console.log(newJoinee); // Output: { name: 'Sumit', salary: 50000 }
 //# sourceMappingURL=script.js.map
